@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Electronics Web Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="header_top">
+            <div class="wrap">
+                <div class="top_nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Shopping Cart</a></li>
+                        <li><a href="#">Checkout</a></li>
+                    </ul>
+                </div>
+                <div class="options_nav">
+                    <ul>
+                        <li>
+                            <select name="language" id="language">
+                                <option value="english">English</option>
+                                <option value="russian">Russian</option>
+                                <option value="german">German</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select name="currency" id="currency">
+                                <option value="usd">USD</option>
+                                <option value="eur">Euro</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header_center">
+            <div class="wrap">
+                <div class="logo_holder">
+                    <a href="index.html"><img src="images/logo.png" class="graphiclogo" alt="Logo"></a>
+                </div>
+                <div class="users_controls_login">
+                    <p><a href="#">LOG IN</a> or <a href="#">CREATE ACCOUNT</a></p>
+                </div>
+                <div class="users_controls_wishlist">
+                    <img src="images/Wish list.png" alt="Wish">
+                </div>
+                <div class="users_controls_cart">
+                    <img src="images/cart.png" alt="Cart">
+                </div>
+            </div>
+        </div>
+        <div class="header_bottom">
+            <div class="wrap">
+                <div class="category_nav">
+                    <ul>
+                        <li><a href="#">Smart Phones</a></li>
+                        <li><a href="#">Desktop</a></li>
+                        <li><a href="#">Laptop</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Networking</a></li>
+                        <li><a href="#">Software</a></li>
+                    </ul>
+                    <div class="search-container">
+                        <form action="/action_page.php">
+                          <input type="text" placeholder="Search.." name="search">
+                          <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="carouselMain">
+        <div class="slideshow_container">
+            <div class="slide_item fade">
+                <img src="images/Slider_main_image.png" alt="Slider Item">
+            </div>
+            <div class="slide_item fade">
+                <img src="images/Slider_main_image.png" alt="Slider Item">
+            </div>
+            <div class="slide_item fade">
+                <img src="images/Slider_main_image.png" alt="Slider Item">
+            </div>
+            <div class="slide_item fade">
+                <img src="images/Slider_main_image.png" alt="Slider Item">
+            </div>
+            <a class="prev_main" onclick="plusSlides(-1)"><img src="images/Previous_main.png" alt=""></a>
+            <a class="next_main" onclick="plusSlides(1)"><img src="images/Next_main.png" alt=""></a>
+        </div>
+        <div class="dot_container">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+          </div>
+    </section>
+    <section id="advantagesSection">
+        <div class="wrap">
+            <div class="advantages__container">
+                <div class="advantages__item">
+                    <img src="images/icon_a1.png" alt="Delivery">
+                    <h3>First Shippung</h3>
+                    <p>Get you everywhere</p>
+                </div>
+                <div class="advantages__item">
+                    <img src="images/icon_a2.png" alt="Secure">
+                    <h3>Secure Store</h3>
+                    <p>100% Secure Store</p>
+                </div>
+                <div class="advantages__item">
+                    <img src="images/icon_a3.png" alt="SaveTime">
+                    <h3>Save Time</h3>
+                    <p>Save Your Time</p>
+                </div>
+                <div class="advantages__item">
+                    <img src="images/icon_a4.png" alt="PayOn">
+                    <h3>Pay On Delivery</h3>
+                    <p>Get you everywhere</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="wrap">
+            <div class="products_first">
+                <div class="products_navbar">
+                    <a class="prev">&#10092;</a>
+                    <div class="navbar_items">
+                        <ul>
+                            <li>Featured</li>
+                            <li>New Item</li>
+                            <li>Top Seller</li>
+                            <li>Top Rating</li>
+                        </ul>
+                    </div>
+                    <a class="next">&#10093;</a>
+                </div>
+                <div class="products_carousel">
+                    <div class="carousel_item">
+                        <div class="product_wrapper">
+                            <div class="product_item">
+                                <a href="#"><img src="images/Image1.png" alt="Product"></a>
+                                <h2> Smart Phone  Primo V1</h2>
+                                <p>$1500</p>
+                            </div>
+                            <div class="product_item">
+                                <a href="#"><img src="images/Image2.png" alt="Product"></a>
+                                <h2> Smart Phone  Primo V1</h2>
+                                <p>$1500</p>
+                            </div>
+                            <div class="product_item">
+                                <a href="#"><img src="images/Image3.png" alt="Product"></a>
+                                <h2> Smart Phone  Primo V1</h2>
+                                <p>$1500</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sale">
+                <img src="images/Sale.png" alt="Sale Image">
+            </div>
+        </div>
+        <div class="subscription">
+            <div>
+                <h1>SUBSCRIBE TO GET OFFER UPDATE</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesettin</p>
+                <input type="email" placeholder="Type Yor email" name="email" id="emailInput">
+                <input type="button" value="Lets Go!">
+            </div>
+        </div>
+        <div class="wrap">
+            <div class="products_first">
+                <div class="products_navbar">
+                    <a class="prev">&#10092;</a>
+                    <div class="navbar_items">
+                        <ul>
+                            <li>Featured</li>
+                            <li>New Item</li>
+                            <li>Top Seller</li>
+                            <li>Top Rating</li>
+                        </ul>
+                    </div>
+                    <a class="next">&#10093;</a>
+                </div>
+                <div class="products_carousel">
+                    <div class="carousel_item">
+                        <div class="product_wrapper">
+                            <div class="product_item">
+                                <a href="#"><img src="images/Image1.png" alt="Product"></a>
+                                <h2> Smart Phone  Primo V1</h2>
+                                <p>$1500</p>
+                            </div>
+                            <div class="product_item">
+                                <a href="#"><img src="images/Image2.png" alt="Product"></a>
+                                <h2> Smart Phone  Primo V1</h2>
+                                <p>$1500</p>
+                            </div>
+                            <div class="product_item">
+                                <a href="#"><img src="images/Image3.png" alt="Product"></a>
+                                <h2> Smart Phone  Primo V1</h2>
+                                <p>$1500</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="products_first">
+                    <div class="products_navbar">
+                        <a class="prev">&#10092;</a>
+                        <div class="navbar_items">
+                            <ul>
+                                <li>Featured</li>
+                                <li>New Item</li>
+                                <li>Top Seller</li>
+                                <li>Top Rating</li>
+                            </ul>
+                        </div>
+                        <a class="next">&#10093;</a>
+                    </div>
+                <div class="products_carousel">
+                    <div class="carousel_item">
+                        <div class="product_wrapper">
+                            <div class="product_item">
+                                <a href="#"><img src="images/Image1.png" alt="Product"></a>
+                                <h2> Smart Phone  Primo V1</h2>
+                                <p>$1500</p>
+                            </div>
+                            <div class="product_item">
+                                <a href="#"><img src="images/Image2.png" alt="Product"></a>
+                                <h2> Smart Phone  Primo V1</h2>
+                                <p>$1500</p>
+                            </div>
+                            <div class="product_item">
+                                <a href="#"><img src="images/Image3.png" alt="Product"></a>
+                                <h2> Smart Phone  Primo V1</h2>
+                                <p>$1500</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="brands">
+                <div class="brandref_container">
+                    <a href="#"><h1>OUR BRAND</h1></a>
+                </div>
+                <div class="brandlogo_container">
+                    <a href="#"><img src="images/brand1.png" alt="brand"></a>
+                    <a href="#"><img src="images/brand2.png" alt="brand"></a>
+                    <a href="#"><img src="images/brand3.png" alt="brand"></a>
+                    <a href="#"><img src="images/brand4.png" alt="brand"></a>
+                    <a href="#"><img src="images/brand5.png" alt="brand"></a>
+                    <a href="#"><img src="images/brand6.png" alt="brand"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer_top">
+            <div class="wrap">
+                <div class="foot_container">
+                    <div class="cont_item">
+                        <h1>INFORMATION</h1>
+                        <h2>ABOUT US</h2>
+                        <h2>CUSTOMER SERVICE</h2>
+                        <h2>PRIVACY POLICY</h2>
+                        <h2>SITE MAP</h2>
+                        <h2>CONTACT</h2>
+                    </div>
+                    <div class="cont_item">
+                        <h1>WHY BUY FROM US?</h1>
+                        <h2>ABOUT US</h2>
+                        <h2>SHIPPING AND RETURNS</h2>
+                        <h2>INTERNATIONAL SIPPING</h2>
+                        <h2>AFFILATES</h2>
+                        <h2>GROUP SALES</h2>
+                    </div>
+                    <div class="cont_item">
+                        <h1>MY ACCOUNT</h1>
+                        <h2>SIGN IN</h2>
+                        <h2>VIEW CART</h2>
+                        <h2>MY WISHLIST</h2>
+                        <h2>TRACK MY ORDER</h2>
+                        <h2>HELP</h2>
+                    </div>
+                    <div class="cont_item">
+                        <h1>CONTACT</h1>
+                        <h2> GEO DATA</h2>
+                        <h2>PHONE NUMBERS</h2>
+                        <h2>E-MAILS</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_middle">
+            <div class="wrap">
+                <div class="creditandsocials">
+                    <div class="creditandsocials_item">
+                        <ul>
+                            <li><a href="#">WE ACCEPT</a></li>
+                            <li><img src="images/Visa.png" alt=""></li>
+                            <li><img src="images/MasterCard.png" alt=""></li>
+                            <li><img src="images/AmericanExpress.png" alt=""></li>
+                            <li><img src="images/Cirrus.png" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="creditandsocials_item">
+                        <ul>
+                            <li><a href="#">Follow Us</a></li>
+                            <li>fb</li>
+                            <li>tweet</li>
+                            <li>g+</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <p>&#169; Copyright: Company Name 2018</p>
+        </div>
+    </footer>
+    <script src="js/carousel.js"></script>
+</body>
+</html>
