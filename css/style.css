@@ -48,6 +48,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
 /*
 CSS Reseted
 
@@ -102,19 +103,7 @@ CSS Reseted
     float: right;
     padding: 12px;
 }
-/*
-.options_nav li a {
-    display: block;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-    ////////////////////////////////////////////////////BORDER
-    color: #557c08
-}
-.options_nav li a:hover{
-    background-color: #222222;
-}
-*/
+
 .header_center{
     height: 90px;
     background-color: #ffffff;
@@ -153,12 +142,13 @@ CSS Reseted
 }
 
 .header_bottom{
-    
+    height: 38px;
     background-color: #f3f3f3;
 }
 
 .category_nav{
-    
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 .category_nav ul{
     list-style-type: none;
@@ -206,7 +196,6 @@ CSS Reseted
     background: #ccc;
 }
 
-
 .slideshow_container {
     max-width: 100%;
     position: relative;
@@ -225,29 +214,6 @@ CSS Reseted
 .next_main{
     right: 0;
 }
-
-/* Caption text */
-/*
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
-*/ 
-/* Number text (1/3 etc) */
-/*
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-*/
 .dot_container{
     text-align: center;
     margin-top: 0;
@@ -312,9 +278,13 @@ CSS Reseted
     justify-content: space-between;
 }
 .prev, .next{
-    padding: 8px;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    padding: 10px 15px;
     margin: 3px;
     background-color: #ffffff;
+    color: #a1d738;
 }
 .products_navbar{
     background-color: #709b1d;
@@ -340,25 +310,64 @@ CSS Reseted
 
 .sale{
     padding-bottom: 86px;
+    display: flex;
 }
-
+.sale div{
+    margin: 4px;
+}
+.sale div img{
+    max-width: 100%;
+    height: auto;
+}
 .subscription{
     height: 252px;
     background-color: #62871c;
     display: flex;
     justify-content: center;
 }
-
+.subscription div{
+    margin-top: 54px;
+    
+}
+.subscription div p{
+    margin-top: 24px;
+}
+.subscription div form{
+    margin-top: 32px;
+}
+.subscription div input[type="email"]{
+    padding: 8px 28px;
+    width: 478px;
+    border: 3px solid #557c08;
+    border-radius: 4px;
+}
+.subscription div input[type="button"]{
+    padding: 8px 28px;
+    margin-left: -4px;
+    border: 3px solid #557c08;
+    border-radius: 4px;
+    background-color: #d0dcb7;
+    color: #557c08;
+    cursor: pointer;
+}
 .brands{
     padding-bottom: 54px;
 }
 .brandref_container{
     display: flex;
     justify-content: center;
+    padding-bottom: 27px;
 }
 .brandlogo_container{
     display: flex;
     justify-content: space-between;
+}
+.brandref_container button{
+    padding: 11px 30px;
+    border: none;
+    border-radius: 2px;
+    background-color: #709b1d;
+    cursor: pointer;
 }
 .footer_top{
     height: 252px;
@@ -396,9 +405,17 @@ CSS Reseted
     text-align: center;
     
 }
+/*
 .creditandsocials_item li a{
     background-color: #709b1d;
     color: #e0e0e0;
+}*/
+.creditandsocials_item li button{
+    padding: 11px 30px;
+    border: none;
+    border-radius: 2px;
+    background-color: #709b1d;
+    cursor: pointer;
 }
 .footer_bottom{
     text-align: center;
@@ -407,16 +424,49 @@ CSS Reseted
 }
 /*    */
 
+.cap{
+    width: 100%;
+    height: 33px;
+    margin-top: 16px;
+    background-color: #709b1d;
+}
 .description_container{
+    margin-top: 40px;
     display: grid;
     grid-template-columns: 60% 40%;
 }
-.image_box{
-    display: inline-block;
+.flex_container{
+    display: flex;
+    justify-content: space-between;
 }
-.description_block{
-    display: inline-block;
+.flex_item{
+    padding: 8px 0 8px 0;
 }
+.thumbnails_carousel{
+    margin-top: 18px;
+    margin-bottom: 18px;
+    padding: 12px 21px;
+    border: 1px solid #cfcfcf;
+    border-radius: 1px;
+}
+.gallery_mini{
+    display: flex;
+    justify-content: center;
+   
+}
+.prev_mini, next_mini{
+    cursor: pointer;
+    
+    padding: 5px;
+}
+/*
+next_mini{
+    right: 0;
+}*/
+
+
+
+
 
 @keyframes fade {
     from {opacity: .4} 
