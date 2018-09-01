@@ -1,0 +1,105 @@
+.carousel-main-container{
+    position: relative;
+    .prvious_main,.next_main{
+        cursor: pointer;
+        position: absolute;
+        width: auto;
+        top: 45%;
+        padding: 16px;
+    }
+    .next_main{
+        right: 0;
+    }
+}
+.carousel-main-item{
+    width: 100%;
+    position: relative;
+    a{
+        padding: 12px 19px;
+        font-size: 16px;
+        position: absolute;
+        top: 63%;
+        left: 65%;
+        text-decoration: none;
+        color: black;
+        background-color: #bbc7b1;
+    }
+    a:hover{
+        background-color: #c1e0a7;
+    }
+    img.slidrr-image{
+        min-width: 100%;
+        height: auto;
+    }
+    .slider-logo{
+        position: absolute;
+        top: 35%;
+        left: 55%;
+    }
+}
+.dots{
+    position: relative;
+    
+    text-align: center;
+}
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+.products-carousel{
+    padding-top: 90px;
+    .tabs{
+        height: 45px;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        .previous-products, .next-products{
+            margin: 10px;
+            a{
+                padding: 7px;
+                background-color: #ffffff;
+                font-size: 18px;
+                font-weight: 600;
+                text-decoration: none;
+                color: #709b1d;
+                border-radius: 2px;
+            }
+        }
+        .tabs-bar{
+            margin: 10px;
+            a{
+                padding: 5px 15px;
+                color: #ffffff;
+                background-color: #709b1d;
+                font-size: 18px;
+                text-decoration: none;
+            }
+            .active-tab{
+                color: #709b1d;
+                background-color: #ffffff;
+                padding-bottom: 16px;
+                border-radius: 4px 4px 0 0;
+            }
+        }
+        background-color: #709b1d;
+    }
+    .products-gallery{
+        padding-top: 42px;
+        .products-sample{
+            display: flex;
+            justify-content: space-between;
+            .product{
+                width: 30%;
+                img{
+                    min-width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

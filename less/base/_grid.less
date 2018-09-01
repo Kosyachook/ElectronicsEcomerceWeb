@@ -1,0 +1,125 @@
+
+header{
+    width: 100%;
+}
+section{
+    width: 100%;
+}
+footer{
+    width: 100%;
+}
+.wrapper{
+    width: 83%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header-top{
+    
+    background-color: #709b1d;
+}
+
+.grid-row{
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 80% 19%;
+    grid-column-gap: 12px;
+    .grid-col{
+        margin: 0;
+        padding: 0;
+    }
+}
+.footer-top{
+    background-color: #f1f1f1;
+    margin: 0;
+    height: 252px;
+    width: 100%;
+    .row{
+        display: flex;
+        justify-content: space-between;
+        .column{
+            width: 24%;
+            h1{
+                padding: 11px 0;
+                font-size: 16px;
+                color: #709b1d;
+                border-bottom: 2px solid #000000;
+            }
+            h2{
+                font-size: 10px;
+                padding: 3px 5px;
+                color: #444444;
+                span{
+                    margin-left: 0;
+                    padding-right: 12px;
+                    padding-left: 0;
+                }
+            }
+            
+        }
+    }
+}
+.footer-middle{
+    padding-top: 8px;
+    background-color: #e0e0e0;
+    margin: 0;
+    height: 52px;
+    .row{
+        display: flex;
+        justify-content: initial;
+        .column{
+            display: flex;
+            justify-content: initial;
+            width: 50%;
+            align-content: center;
+            a{
+                background-color: #709b1d;
+                color: #ffffff;
+                text-decoration: none;
+                padding: 10px 19px;
+                border-radius: 4px;
+                margin-right: 14px;
+            }
+            
+            a.fa:hover {
+                opacity: 0.7;
+            }
+            a.fa-facebook {
+            background: #3B5998;
+            color: white;
+            }
+
+            a.fa-twitter {
+            background: #55ACEE;
+            color: white;
+            }
+
+            a.fa-google {
+            background: #dd4b39;
+            color: white;
+            }
+            a.fa-dribbble {
+                background: #ea4c89;
+                color: white;
+            }  
+            a.fa-rss {
+                background: #ff6600;
+                color: white;
+            }
+            img{
+                margin-right: 10px;
+            }
+        }
+    }
+}
+.footer-bottom{
+    background-color: #709b1d;
+    height: 50px;
+    text-align: center;
+    p{
+        margin: 0;
+        padding-top: 16px;
+        font-size: 14px;
+        color: #c5ec78;
+    }
+}
